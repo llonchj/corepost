@@ -403,7 +403,7 @@ class RequestRouter:
         if len(requestargs.keys()) > 0:
             for arg in requestargs.keys():
                 # maintain first instance of an argument always
-                safeDictUpdate(allargs,arg,requestargs[arg][0])
+                safeDictUpdate(allargs,arg,requestargs[arg][0] if len(requestargs[arg]) == 1 else requestargs[arg])
         elif hasattr(request,'json'):
             # if YAML parse root elements instead of form elements   
             for key in request.json.keys():

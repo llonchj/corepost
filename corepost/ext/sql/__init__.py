@@ -5,7 +5,7 @@ Multicore module
 '''
 
 try:
-    import txZMQ
+    import txzmq
 except ImportError as ex:
     print "You need to have txZMQ and ZeroMQ installed in order to use multicore support in Corepost"
     raise ex

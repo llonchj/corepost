@@ -1,2 +1,1 @@
-nosetests --with-freshen -v
-
+python setup.py nosetests

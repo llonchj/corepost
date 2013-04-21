@@ -167,6 +167,8 @@ setup(
     tests_require=[
          'httplib2>=0.7.1',
          'freshen>=0.2',
+         'txZMQ'
     ],
+    test_suite='corepost.test',
     zip_safe = True
 )
